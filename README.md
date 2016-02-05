@@ -16,6 +16,10 @@ I used triplets of characters for the colour images and single characters for th
 As visible in the produced images, some books tend to have a *significant* patterns, where other show random noise! Why? How? Is there a conspiracy? :)
 Really, the Book of the Dead images are very spooky!!
 
-## ToDo
+## Explanation
 
-Actually find out why this occurred! Probably a really simple reason!
+The non-alphanumeric characters in the scripts have very different ASCII values than the alphanumeric ones. As a result, any block of text with a lot of line breaks or special characters will produce an image that does not look like it's completely random.
+
+## Thoughts
+
+The images would be useful as a quick inspection tool for any large block of text, as they indicate the formatting style across the document. Another experiment would be to run a lossy algorithm on these images and then convert them back to text, although I'm sure the result wouldn't look pleasing! :)
