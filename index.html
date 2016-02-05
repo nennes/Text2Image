@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Text2image by nennes</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Text2image</h1>
+        <p>An interesting experiment</p>
+
+        <p class="view"><a href="https://github.com/nennes/Text2Image">View the Project on GitHub <small>nennes/Text2Image</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/nennes/Text2Image/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/nennes/Text2Image/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/nennes/Text2Image">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="text2image" class="anchor" href="#text2image" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Text2Image</h1>
+
+<h2>
+<a id="an-interesting-experiment" class="anchor" href="#an-interesting-experiment" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>An interesting experiment</h2>
+
+<p>On my way home today, I had a thought. Even Extended-ASCII characters fit in 1 byte. 1 byte is also the amount of information required to describe a colour channel in an image.</p>
+
+<p>What if we turned text to images? Surely, even though the distribution of values is not normal, there shouldnt be any significant patterns in th resulting image.</p>
+
+<h2>
+<a id="methodology" class="anchor" href="#methodology" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Methodology</h2>
+
+<p>To put this to rest, I wrote a Python script that converts the text from some classical books (found <a href="http://www.textfiles.com/etext/">here</a>) to both colour and grayscale images.
+I used triplets of characters for the colour images and single characters for the grayscale ones.</p>
+
+<h2>
+<a id="oh-the-horror" class="anchor" href="#oh-the-horror" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Oh the horror!</h2>
+
+<p>As visible in the produced images, some books tend to have a <em>significant</em> patterns, where other show random noise! Why? How? Is there a conspiracy? :)
+Really, the Book of the Dead images are very spooky!!</p>
+
+<h2>
+<a id="explanation" class="anchor" href="#explanation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Explanation</h2>
+
+<p>The non-alphanumeric characters in the scripts have very different ASCII values than the alphanumeric ones. As a result, any block of text with a lot of line breaks or special characters will produce an image that does not look like it's completely random.</p>
+
+<h2>
+<a id="thoughts" class="anchor" href="#thoughts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Thoughts</h2>
+
+<p>The images would be useful as a quick inspection tool for any large block of text, as they indicate the formatting style across the document. Another experiment would be to run a lossy algorithm on these images and then convert them back to text, although I'm sure the result wouldn't look pleasing! :)</p>
+
+<h2>
+<a id="want-more-check-out-my-other-projects" class="anchor" href="#want-more-check-out-my-other-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Want more? Check out my other projects!</h2>
+
+<h3>
+<a id="lets-play-broken-telephone-with-google-translate-" class="anchor" href="#lets-play-broken-telephone-with-google-translate-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/nennes/PyBrokenTelephone">Let's play broken telephone with Google Translate!! :)</a>
+</h3>
+
+<h3>
+<a id="ever-wanted-a-nice-word-cloud-out-of-a-list-of-tags" class="anchor" href="#ever-wanted-a-nice-word-cloud-out-of-a-list-of-tags" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="http://nennes.github.io/rWordCloud">Ever wanted a nice Word Cloud out of a list of tags?</a>
+</h3>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/nennes">nennes</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-73133619-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
